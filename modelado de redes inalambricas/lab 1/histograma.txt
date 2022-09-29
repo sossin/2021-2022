@@ -1,0 +1,34 @@
+https://www.youtube.com/watch?v=ucVp995yiFM&feature=youtu.be
+
+import matplotlib.pyplot as plt
+import numpy as np
+import random
+import statistics as statistics
+
+inicio = -2
+fin = 2
+ancho = 0.1
+div=np.linspace(inicio,fin, round(1+(fin-inicio)/ancho))
+plt.hist(np.random.uniform(-1,1,1000) ,div,color='blue')
+plt.show()
+
+import random
+
+num = 4
+
+strt_num = 1
+
+end_num = 1000
+
+res = 0.0
+for _ in range(num):
+    res += random.uniform(strt_num, end_num)
+
+res = res / num
+
+print("El Valor medio es : " + str(res))
+
+y = [random.gauss(5, 1) for _ in range(1000)]
+statistics.variance(y)
+print("la varianza es")
+print(statistics.variance(y))

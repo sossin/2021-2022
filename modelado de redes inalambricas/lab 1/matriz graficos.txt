@@ -1,0 +1,17 @@
+https://www.youtube.com/watch?v=KHsYWg5u8wA
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+n = 10
+data = np.random.random((n,2))
+colors = [ "red","green"]
+color_filt = []
+for line in data:
+     print(line)
+
+     plt.scatter(data[:,0], data[:,1])
+     plt.xlabel("Eje x")
+     plt.xlabel("Eje y")
+     plt.title("grafico de matris de numeros aleatorios")
+     plt.show()
