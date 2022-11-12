@@ -1,0 +1,14 @@
+from sympy import  isprime
+from colorama import Fore
+from colorama import Style
+print(Style.BRIGHT+"Primality Test")
+print("")
+x = int(input(Fore.YELLOW+"Introduce un numero: "))
+y = int(input(Fore.CYAN+"cantidad de veces que se debe probar la primalidad: "))
+
+for n in range (x,y):
+    if (2**(n-1)-1) % (n)==0:
+        if isprime(n):
+            print(n,Fore.LIGHTGREEN_EX+"numero primo")
+        else:
+            print(n,Fore.GREEN+"pseudoprime")
